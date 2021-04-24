@@ -11,7 +11,7 @@ function Nav(props) {
   } = props;
 
   useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
+    document.title = capitalizeFirstLetter({currentCategory.name});
   }, [currentCategory]);
 
   const handleClick = (item) => {
